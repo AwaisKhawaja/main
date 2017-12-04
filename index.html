@@ -1,0 +1,46 @@
+<html>
+
+	<head>
+	
+		<title>Login</title>
+	
+	</head>
+	
+	<body style="background-color:gray; color:black">
+		
+		<br/><br/><br/><br/><br/>
+		<h3>Login</h3>
+		<b>Password: </b><input type="password" id="pass"/><br/><br/>
+		<button type="button" onclick="login()">Login</button>
+		<p style="color:red; display:none;" id="ic">Incorrect!<p>
+		<p style="color:green; display:none;" id="c">Correct!<p>
+		
+		<script>
+		
+			p = document.getElementById("pass");
+			ic = document.getElementById("ic");
+			c = document.getElementById("c");
+		
+			function login(){
+			
+				if (p.value == "pass1234"){
+				
+					p.style="background-color:#58D68D";
+					ic.style="color:red; display:none;";
+					c.style="color:green; display:block;";
+					
+				}else{
+				
+					p.style="background-color:pink";
+					ic.style="color:red; display:block;";
+					p.value="";
+				
+				}
+			
+			}
+		
+		</script>
+		
+	</body>
+
+</html>
