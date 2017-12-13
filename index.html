@@ -9,23 +9,32 @@
 	
 	<body style="background-color:gray; color:black">
 		
-		<br/><br/><br/><br/><br/>
+		<p>13120904</p><br/><br/><br/><br/>
 		<h3>Login</h3>
 		<b>Password: </b><input type="password" id="pass"/><br/><br/>
 		<button type="button" onclick="login()">Login</button>
+		<button type="button" onclick="forg()">Forgot</button>
 		<p style="color:red; display:none;" id="ic">Incorrect!<p>
 		<p style="color:green; display:none;" id="c">Correct!<p>
 		
 		<img src="http://hitwebcounter.com/counter/counter.php?page=6821377&style=0008&nbdigits=4&type=page&initCount=0" border="0" >
                 <br/> 
 		<img src="http://hitwebcounter.com/counter/counter.php?page=6821376&style=0008&nbdigits=4&type=ip&initCount=0" border="0" >
-                <br/>         
+                <br/>       
+
+		<div id="for" style="display:none;">
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfn0xBMFoPGsVMxm1fbnfQLu8eoSp7eM1QvjNBE_e9Ky3wxiQ/viewform?embedded=true" width="760" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+		</div>
 		
 		<script>
 		
 			p = document.getElementById("pass");
 			ic = document.getElementById("ic");
 			c = document.getElementById("c");
+			
+			function forg(){
+				document.getElementById("for").style="display:block;";
+			}
 		
 			function login(){
 			
